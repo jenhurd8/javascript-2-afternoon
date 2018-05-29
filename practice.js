@@ -14,9 +14,12 @@
   Then alert your name using dot notation.
 */
 
-//Code here
+var me = {
+name: "Jennifer",
+age: 43
+}
 
-
+alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -25,8 +28,15 @@
   Have the values to those keys be your favorite thing in that category.
 */
 
-//Code here
+var favoriteThings = {
+  band:"The Beatles",
+  food:"pizza",
+  person:"Jesus",
+  book:"A Wrinkle in Time",
+  movie:"The Princess Bride",
+  holiday:"Christmas"
 
+}
 
 
 /*
@@ -35,6 +45,8 @@
 
 //Code here
 
+favoriteThings.car = "Mustang";
+favoriteThings.brand = "Levi's";
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,12 +69,16 @@
 */
 
 //Code here
-
-
+var backPack = {
+}
+var item = "firstPocket";
+backPack[item]="chapstick";
+backPack.color = "red";
 
 /*
   After you do the above, alert your entire backPack object.
 */
+alert(backPack);
 
 //Code here
 
@@ -74,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +114,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +127,9 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {
 
+}
 
 
 /*
@@ -118,15 +138,16 @@ var user2 = {
 */
 
 //Code Here
-
-
+methodCollection["alertHello"] = function (){alert("hello")};
+methodCollection["logHello"] = function (){console.log("hello")};
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -138,7 +159,13 @@ var user2 = {
 
 //Code Here
 
-
+function makePerson (name, birthday, ssn){
+  return person = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -149,4 +176,8 @@ var user2 = {
 
 //Code Here
 
-
+function makeCard (cardNumber,expirationDate, securityCode){
+  return newCard = {
+    cardNumber, expirationDate, securityCode
+  }
+}
